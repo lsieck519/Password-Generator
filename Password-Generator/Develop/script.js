@@ -9,7 +9,7 @@ var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var specialCharacters = ['~','!','@','#','$','%','^','&','*','?','=','+','<','>','/','[',']','{','}']
 
 
-//Function to custom generate a password
+//Function to custom generate a password based on user selected criteria 
 
 function generatePassword() {
 
@@ -59,7 +59,7 @@ if (hasSpecial) {
 }
 
 if (hasLowercase === false && hasUppercase === false && hasNumbers === false && hasSpecial === false) {
-  return "Unable to generate password without characters. Please try again and select at least one character type.";
+  return "Unable to generate a password without characters. Please try again and select at least one character type.";
 };
 
 // Combine selected characters type into one variable called possibleCharacters
